@@ -1,0 +1,44 @@
+<!-- Customize (don't change the ones you want to stay the same) the values declared in the first four lines and then paste the following into your Custom Footer section -->
+
+<script>
+	$(function() {
+
+		var operationalText = "Operational"
+		var degradedText = "Degraded Performance"
+		var partialText = "Partial Outage"
+		var majorText = "Major Outage"
+
+
+		var newText = function(str) {
+
+		if (str.indexOf('Operational') != -1) {
+			return str.replace('Operational', operationalText);
+		}
+
+		if (str.indexOf('Degraded Performance') != -1) {
+			return str.replace('Degraded Performance', degradedText);
+		}
+
+		if (str.indexOf('Partial Outage') != -1) {
+			return str.replace('Partial Outage', partialText);
+		}
+
+		if (str.indexOf('Major Outage') != -1) {
+			return str.replace('Major Outage', majorText);
+		}
+		}
+
+		$('.legend-item').each(function() {
+			var $this = $(this);
+			var $html = $this.html();
+			$this.html(newText($html));
+		});
+
+
+		$('.component-inner-container .component-status').each(function() {
+			var $this = $(this);
+			var $html = $this.html();
+			$this.html(newText($html));
+		});
+	});
+</script>

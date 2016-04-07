@@ -1,0 +1,14 @@
+<!-- 
+Replace "status.mywebsite.com" with the URL of your actual status page. -->
+For example, if you were New Relic, you would replace status.mywebsite.com with status.newrelic.com.
+-->
+
+<!-- Do the replacements described above and then paste the following into your Custom Footer section -->
+
+<script>
+	$(function() {
+		if (window.location.href == "http://status.mywebsite.com/history") {
+		  window.location.href = "https://status.mywebsite.com";
+		}
+	});
+</script>

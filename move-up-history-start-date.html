@@ -1,0 +1,14 @@
+<!-- 
+	Replace the X in the "monthsToRemove" line with the number off months you want to chop off of the end of your history page.
+	Once you've done that, paste the following into the Custom Footer section.
+-->
+
+<script>
+	$(function() {
+		var monthsToRemove = X;
+
+		for (i = 0; i < monthsToRemove; i++) { 
+		  $('.months-container .month:last-child').remove();
+		}
+	});
+</script>

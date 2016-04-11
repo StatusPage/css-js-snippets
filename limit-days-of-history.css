@@ -1,5 +1,8 @@
-// Replace "x" with the number of days you want to show + 2.
-// For example, if you wanted to show the last 3 days of history, you would replace x with 5.
+/*
+Replace "x" with the number of days you want to show + 2.
+For example, if you wanted to show the last 3 days of history, you would replace x with 5.
 
-// Do the replacements described above and then paste the following into your Custom CSS section.
+Do the replacements described above and then paste the following into your Custom CSS section.
+*/
+
 .status-day:nth-child(n+x) { display:none; }

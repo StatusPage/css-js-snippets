@@ -1,5 +1,8 @@
-// Replace "x" with the number of months you want to show on the "/history" page + 1.
-// For example, if you wanted to show the last 3 months of history, you would replace x with 4.
+/*
+Replace "x" with the number of months you want to show on the "/history" page + 1.
+For example, if you wanted to show the last 3 months of history, you would replace x with 4.
 
-// Do the replacements described above and then paste the following into your Custom CSS section
+Do the replacements described above and then paste the following into your Custom CSS section
+*/
+
 .months-container .month:nth-child(n+x) { display:none; }
